@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+header {
+  width: 80%;
+  display: flex;
+}
+
+.month,
+.week {
+  width: 300px;
+  padding: 15px 0;
+  font-size: 25px;
+}
+
+header > div > select {
+  font-size: 25px;
+  padding: 5px 8px;
+}
+
+.tg {
+  width: 90vw;
+  /* height: 500px; */
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.tg td {
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  font-size: 14px;
+  overflow: hidden;
+  word-break: normal;
+  padding: 15px 10px;
+  font-weight: normal;
+  border-style: solid;
+  border: 2px solid black;
+}
+.tg .tg-amwm {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg-amwm > span {
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+}
+.tg .tg-stu {
+  text-align: left;
+  vertical-align: top;
+}
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    display: flex;
+  }
+  table {
+    width: 100vw;
+  }
+  .tg {
+    width: auto !important;
+  }
+  .tg col {
+    width: auto !important;
+    border: solid red;
+  }
+  .tg-wrap {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
